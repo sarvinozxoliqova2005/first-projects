@@ -116,7 +116,7 @@ body {
 @media (max-width: 768px) {
     .hero-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -174,7 +174,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-image img {
-        max-width: 70%;
+        max-width: 90%;
     }
 }
 
@@ -219,10 +219,23 @@ body {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .about-text h2 {
+        font-size: 32px;
+    }
+}
+
 .about-text p{
     text-align: center;
     color: #6E7191;
     font-size: 21px;
+}
+
+@media (max-width: 768px) {
+    .about-text p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }
 
 .about-cards-grid {
@@ -232,11 +245,33 @@ body {
     gap: 30px;
 }
 
+@media (max-width: 968px) {
+    .about-cards-grid {
+        grid-template-columns: repeat(2 , fr);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;   
+        justify-content: center; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .about-cards-grid {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;   
+        justify-content: center; 
+        gap: 20px;          
+    }
+}
+
 .about-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .about-card h1 {
     margin-top: 30px;
@@ -247,15 +282,34 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .about-card h1 {
+        font-size: 20px;
+    }
+}
+
 .about-card p{
     margin-top: 10px;
     font-size: 21px;
     color: #6E7191;
 }
 
+@media (max-width: 768px) {
+    .about-card p {
+        font-size: 16px;
+    }
+}
+
 .about-card img {
     width: 240px;
     height: 240px;
+}
+
+@media (max-width: 768px) {
+    .about-card img{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 
@@ -265,6 +319,13 @@ body {
     align-items: center;
     gap: 40px;
     margin-top: 100px;
+}
+
+@media (max-width: 425px) {
+    .about-btns {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .btns1 {
@@ -317,6 +378,13 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width:  768px) {
+    .services-texts{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .services-texts button {
     width: 214px;
     height: 73px;
@@ -341,6 +409,18 @@ body {
     margin-top: 100px;
 }
 
+@media (max-width: 600px) {
+    .services-comp {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-comp {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
 .service-cards {
   display: flex;
   flex-direction: column;
@@ -354,6 +434,14 @@ body {
     width: 220px;
     height: 190px;
     object-fit: cover;
+}
+
+@media  (max-width: 768px) {
+    .service-cards img {
+        width: 190px;
+        height: 150px;
+        object-fit: cover;
+    }
 }
 
 .service-cards h1{
@@ -370,6 +458,13 @@ body {
     font-weight: 400;
     margin-top: 10px;
     margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .service-cards p {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 
@@ -393,6 +488,17 @@ body {
    max-width: 1220px;
    width: 100%;
    height: 700px;
+}
+
+@media (max-width: 768px) {
+    .covid-cards {
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: flex-start; 
+        height: auto;            
+        padding: 20px;         
+        gap: 20px;              
+    }
 }
 
 .covid-btns {
@@ -419,6 +525,18 @@ body {
     font-weight: 700;
 }
 
+@media (max-width: 450px) {
+   .covidbtns2 {
+    font-size: 20px;
+   }
+}
+
+@media (max-width: 422px) {
+   .covidbtns2 {
+    font-size: 18px;
+   }
+}
+
 .covidbtns1:hover {
      background-color: #004d40;
 }
@@ -426,6 +544,13 @@ body {
 .card {
     width: 555px;
     height: 830px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 450px;
+        height: 650px;
+    }
 }
 
 .covid-texts p {
@@ -442,6 +567,24 @@ body {
     margin-right: 20px;
 }
 
+@media  (max-width: 778px) {
+    .covid-texts h1 {
+        font-size: 36px;
+    }
+}
+
+@media  (max-width: 925px) {
+    .covid-texts h1 {
+        font-size: 36px;
+    }
+}
+
+@media  (max-width: 810px) {
+    .covid-texts h1 {
+        font-size: 36px;
+    }
+}
+
 .covid-texts h3 {
     color: white;
     font-size: 21px;
@@ -449,6 +592,13 @@ body {
     line-height: 30px;
     margin-top: 20px;
 }
+
+@media  (max-width: 768px) {
+    .covid-texts h3 {
+        font-size: 18px;
+    }
+}
+
 
 
 
@@ -468,15 +618,36 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .article-texts  {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .article-texts h1 {
     font-size: 48px;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .article-texts h1 {
+        font-size: 34px;
+    }
 }
 
 .article-btns {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .article-btns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
 }
 
 .articlebtns1 {
@@ -489,6 +660,13 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .articlebtns1 {
+        width: 190px;
+        height: 65px;
+    }
 }
 
 .articlebtns1:hover {
@@ -505,6 +683,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .articlebtns2 {
+        width: 190px;
+        height: 65px;
+    }
+}
+
 .articlebtns2:hover {
     background-color: #0075FF;
     color: white;
@@ -517,9 +702,26 @@ body {
     margin-top: 90px;
 }
 
+@media  (max-width: 868px) {
+    .artic-cards {
+        grid-template-columns: repeat(1 , 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .artics-cards img {
     width: 600px;
     height: 366px;
+}
+
+@media (max-width: 768px) {
+    .artic-cards img {
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .artics-cards h2 {
@@ -527,6 +729,12 @@ body {
     font-weight: 700;
     line-height: 34px;
     padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .artics-cards h2  {
+        font-size: 18px;
+    }
 }
 
 .artics-cards p {
@@ -538,11 +746,23 @@ body {
     padding-left: 10px;
 }
 
+@media (max-width: 768px) {
+    .artics-cards p {
+        font-size: 16px;
+    }
+}
+
 .artics-cards b {
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .artics-cards b {
+        font-size: 16px;
+    }
 }
 
 .texts {
@@ -561,7 +781,12 @@ body {
     margin-left:20px;
 }
 
-
+@media (max-width: 768px) {
+    .texts {
+        width: 370px;
+        height: 240px;
+    }
+}
 
 
 
@@ -578,12 +803,19 @@ body {
     max-width: 1400px;
     width: 100%;
    display: flex;
-   align-items: center;
-   justify-content: space-between;
+   grid-template-columns: repeat(2 , 1fr);
+   /* align-items: center;
+   justify-content: space-between; */
    gap: 20px;
    padding: 90px;
    background-color: #e5e9ee;
    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .container.contact-us {
+    grid-template-columns: repeat(1 , 1fr);
+  }
 }
 
 .contact-user {
@@ -594,6 +826,12 @@ body {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-user h1 {
+        font-size: 40px;
+    }
 }
 
 /* .contact-user p,
@@ -607,16 +845,34 @@ body {
 
 .contact-user p{
     font-size: 18px;
+}
 
+@media (max-width: 768px) {
+    .contact-user p {
+        font-size: 16px;
+    }
 }
 
 .contact-user h2 {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .contact-user h2 {
+        font-size: 18px;
+    }
+}
+
 .contact-user h3 {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .contact-user h3 {
+        font-size: 18px;
+    }
+}
+
 
 .contact-user button {
   width: 256px;
@@ -631,6 +887,14 @@ body {
   margin-top: 30px;
   transition: background-color 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .contact-user button {
+        width: 230px;
+        height: 65px;
+    }
+}
+
 
 .contact-user button:hover {
   background-color: #003fcc;
@@ -647,6 +911,14 @@ body {
   padding-right: 60px;
   box-sizing: border-box;
   margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .forms {
+    width: 90%;    
+    height: auto;   
+    padding: 40px;
+  }
 }
 
 
@@ -721,18 +993,6 @@ body {
  background-color: #004d40;
 }
 
-@media (max-width: 768px) {
-  .container.contact-us {
-    flex-direction: column;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-}
-
-
-
 
 
 
@@ -745,12 +1005,32 @@ body {
     padding-bottom: 100px;
 }
 
-
-
 .footer{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 60px;
+}
+
+@media (max-width: 1098px) {
+    .footer {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        grid-template-columns: repeat(1 , 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footers h1{
