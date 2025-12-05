@@ -35,14 +35,11 @@ function HomePages() {
              </div>
            </div>
          <div className="hero-image">
-          <img src="/public/home-png.png" alt="Person cleaning home" />
+          <img src="./home-png.png" alt="Person cleaning home" />
          </div>
         </div>
         </div>
       </section>
-
-
-
 
   <section id="about">
      <div className="container about-us">
@@ -85,7 +82,7 @@ function HomePages() {
     <section id="covid-card">
       <div className="container covid-cards">
          <div className="card">
-           <img src="./public/cards.png" alt="" />
+           <img src="./cards.png" alt="" />
          </div>
             <div className="covid-texts">
               <p>Covid-19 sanitization</p>
